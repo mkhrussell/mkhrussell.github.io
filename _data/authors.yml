@@ -1,0 +1,26 @@
+# /_data/authors.yml
+
+Kamrul Hasan:
+  name   : "Kamrul Hasan"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "A full time mobile application developer, a mentor and a father."
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://mkhrussell.github.io/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/mkhrussell/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mkhrussell/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mkhrussell/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://www.facebook.com/mkh.russell/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/mkhrussell/"
+      
