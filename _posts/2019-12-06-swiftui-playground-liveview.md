@@ -38,23 +38,29 @@ struct ContentView: View {
 
 PlaygroundPage.current.setLiveView(ContentView())
 ```
+
+{:start="3"}
 3. Now click on "Adjust Editior Options" button
 4. Then select "Live View" from the popup menu
 
 ![image2](/assets/images/swiftui-playground-liveview/image2.png)
 
+{:start="5"}
 5. "Adjust Editior Options" button's icon will change
 
 ![image3](/assets/images/swiftui-playground-liveview/image3.png)
 
+{:start="6"}
 6. Click on "Play" button to run the Playground file 
 
 ![image4](/assets/images/swiftui-playground-liveview/image4.png)
 
+{:start="7"}
 7. Live View will appear in preview area in the right side
 
 ![image5](/assets/images/swiftui-playground-liveview/image5.png)
 
+{:start="8"}
 8. You can even click on the button from the Live View. Here output of the print statement of button's click event appears in the debug area.
 
 Download [SwiftUI.playground.zip](/assets/files/swiftui-playground-liveview/SwiftUI.playground.zip).
