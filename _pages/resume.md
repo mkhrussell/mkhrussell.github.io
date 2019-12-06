@@ -10,9 +10,15 @@ Mobile Application Developer
 <div id="webaddress">
 <a href="mailto:mkhrussell@gmail.com">mkhrussell@gmail.com</a>
 |
+<i class="fa fa-link"></i> <a href="https://mkhrussell.github.io/">https://mkhrussell.github.io/</a>
+|
 <i class="fa fa-github"></i> <a href="https://github.com/mkhrussell/">mkhrussell</a>
 |
+<i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/mkhrussell/">mkhrussell</a>
+|
 <i class="fa fa-twitter"></i> <a href="https://twitter.com/mkhrussell/">mkhrussell</a>
+|
+<i class="fa fa-facebook"></i> <a href="https://www.facebook.com/mkh.russell/">mkh.russell</a>
 </div>
 
 
@@ -129,7 +135,7 @@ Gardner PP, Daub J, Tate J, __Moore BL__ _et al._ Rfam: Wikipedia, clans and the
 
 ### github
 
-My [personal github account](https://github.com/blmoore) hosts my hobby development projects as well as listing contributions to open source tools. Examples include: shiny apps [blackspot](https://github.com/blmoore/blackspot) and [shinybrot](https://github.com/blmoore/shinybrot), as well as an R package hosted by CRAN ([mandelbrot](https://github.com/blmoore/mandelbrot)).
+My [personal github account](https://github.com/mkhrussell/) hosts my hobby development projects as well as listing contributions to open source tools. Examples include: shiny apps [blackspot](https://github.com/blmoore/blackspot) and [shinybrot](https://github.com/blmoore/shinybrot), as well as an R package hosted by CRAN ([mandelbrot](https://github.com/blmoore/mandelbrot)).
 
 ### blog
 
@@ -169,15 +175,17 @@ Worked for two summers on the Rfam database ([rfam.xfam.org](http://rfam.xfam.or
 ## Links
 
 <!-- fa are fontawesome, ai are academicons -->
-* <i class="fa fa-envelope"></i> <a href="mailto:ben@blm.io">ben@blm.io</a><br />
-* <i class="fa fa-github"></i> <a href="http://github.com/blmoore">blmoore</a><br />
-* <i class="fa fa-twitter"></i> <a href="http://twitter.com/benjaminlmoore">benjaminlmoore</a><br />
-* <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/blmoore/">LinkedIn</a>
-* <i class="fa fa-stack-overflow"></i> <a href="http://stackoverflow.com/users/1274516/blmoore">StackOverflow</a>
+* <i class="fa fa-envelope"></i> <a href="mailto:mkhrussell@gmail.com">mkhrussell@gmail.com</a><br />
+* <i class="fa fa-github"></i> <a href="https://github.com/mkhrussell/">mkhrussell</a><br />
+* <i class="fa fa-twitter"></i> <a href="https://twitter.com/mkhrussell/">mkhrussell</a><br />
+* <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/mkhrussell/">LinkedIn</a>
+* <i class="fa fa-stack-overflow"></i> <a href="https://stackoverflow.com/users/6037446/mkh-russell">StackOverflow</a>
+<!-- 
 * <i class="fa fa-wikipedia"></i> <a href="https://en.wikipedia.org/wiki/User:Ben_Moore">Wikipedia Userpage</a><br />
 * <i class="ai ai-google-scholar"></i> <a href="http://scholar.google.com/citations?user=YMxsGpsAAAAJ">Google scholar</a>
 * <i class="ai ai-orcid"></i> <a href="https://orcid.org/0000-0002-4074-1933">ORCiD</a>
 * <i class="ai ai-figshare"></i> <a href="https://figshare.com/authors/Benjamin_Moore/99461">figshare</a>
+ -->
 
 ## References
 
