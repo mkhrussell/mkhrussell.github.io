@@ -8,6 +8,9 @@ tags:
   - SwiftUI
   - Xcode Playground
   - Live View
+  - swiftui
+  - liveview
+  - playground
 ---
 
 In WWDC 2019, Apple announced SwiftUI, and innovative UI Library for iOS. SwiftUI's declarative syntax and simplicity made many developers fan of this new libray instantly.

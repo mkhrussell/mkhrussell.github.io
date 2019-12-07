@@ -6,6 +6,7 @@ categories:
   - blog
 tags:
   - iOS 13
+  - swift
   - main method
   - main function
   - minimal app
@@ -13,6 +14,7 @@ tags:
   - view controller lifecycle
   - appdelegate
   - scenedelegate
+  - xcode
 ---
 
 For any iOS 13 app, you need an **AppDelegate** and a **SceneDelegate** and then you have to call **UIApplicationMain** function. You need an initial **UIViewController** object which you have to set as **rootViewController** property of the window object of the AppDelegate. In a typical iOS app, most of this work done through configurations burried inside Info.plist file leaving beginners in deep trouble in understanding the insights of the app ie. how it launches, what are the lifecycle events, etc.
