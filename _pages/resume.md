@@ -10,31 +10,31 @@ profile:
       - label: "mkhrussell@gmail.com"
         icon: "fa fa-envelope"
         url: "mailto:mkhrussell@gmail.com"
-      - label: "https://mkhrussell.github.io"
+      - label: "mkhrussell.github.io"
         icon: "fa fa-link"
         url: "https://mkhrussell.github.io"
-      - label: "https://www.linkedin.com/in/mkhrussell"
+      - label: "linkedin.com/in/mkhrussell"
         icon: "fa fa-linkedin"
         url: "https://www.linkedin.com/in/mkhrussell"
-      - label: "https://github.com/mkhrussell"
+      - label: "github.com/mkhrussell"
         icon: "fa fa-github"
         url: "https://github.com/mkhrussell"
     row2:
-      - label: "https://stackoverflow.com/users/6037446/mkh-russell"
+      - label: "stackoverflow.com/users/6037446/mkh-russell"
         icon: "fa fa-stack-overflow"
         url: "https://stackoverflow.com/users/6037446/mkh-russell"
-      - label: "https://www.facebook.com/mkh.russell"
+      - label: "facebook.com/mkh.russell"
         icon: "fa fa-facebook"
         url: "https://www.facebook.com/mkh.russell"
-      - label: "https://www.instagram.com/mkhrussell"
+      - label: "instagram.com/mkhrussell"
         icon: "fa fa-instagram"
         url: "https://www.instagram.com/mkhrussell"
     row3:
-      - label: "https://twitter.com/mkhrussell"
+      - label: "twitter.com/mkhrussell"
         icon: "fa fa-twitter"
         url: "https://twitter.com/mkhrussell"
 ---
-
+---
 ## Experienced in
 
 I am a full time mobile application developer at [Samsung R&D Institute Bangladesh (SRBD)](https://research.samsung.com/srbd). Here, I design and develop software and mentor a few other developers.
@@ -42,16 +42,19 @@ I am a full time mobile application developer at [Samsung R&D Institute Banglade
 ## Professional Experience
 
 `Oct 2011 - To date` 
-__Samsung R&D Institute Bangladesh Ltd.__ - __Staff Engineer__
+__Samsung R&D Institute Bangladesh Ltd.__ - __Staff Engineer__:
+Lead developer and architect of a team, working on two iOS applications (one is already in AppStore).
 
 `Dec 2010 - Oct 2011` 
-__IBM Bangladesh__ - __Assistant IT Specialist__
+__IBM Bangladesh__ - __Assistant IT Specialist__ (Airtel outsourced their IT Division to IBM. Hence, my responsibilities were same as Airtel):
+Member of post-paid charging and CDR processing team. I was responsible for designing and developing in-house VAS solutions for Airtel Bangladesh.
 
 `Apr 2009 - Dec 2010` 
-__Airtel Bangladesh Ltd.__ (Former Warid Telecom International Ltd.) - __Associate IT Specialist__
+__Airtel Bangladesh Ltd.__ - __Associate IT Specialist__:
+Member of post-paid charging and CDR processing team. I was responsible for designing and developing in-house VAS solutions.
 
 `Mar 2007 - Mar 2009` 
-__Center for Environmental and Geographic Information Services (CEGIS)__ - __Computer Programmer__:
+__CEGIS__ - __Computer Programmer__:
 I worked on three projects as a developer.
     1. Agricultural Research Information System (ARIS): Developed data entry front-end for the system using PHP/Oracle and JavaScript.
     2. GIS based Salt Industry Information Management System (GSIIS): Developed the front-end using ASP.NET/C#.
@@ -60,15 +63,14 @@ I worked on three projects as a developer.
 ## Education
 
 `2000-2004`
-__Bachelor of Science (B.Sc.), Shahjalal University of Science and Technology, Sylhet, Bangladesh__ Computer Science and Engineering
+__Bachelor of Science (B.Sc) in Computer Science and Engineering, Shahjalal University of Science and Technology, Sylhet, Bangladesh__
 
 ## Technical skills
 
-* Swift
-* Kotlin
-* JavaScript
-* Bash
-* Git
+* Swift, Kotlin, JavaScript
+* Git, Perforce
+* Bash, Zsh
+* Unix, macOS, Linux, Windows
 
 ## Areas of expertise
 
@@ -76,9 +78,9 @@ __Bachelor of Science (B.Sc.), Shahjalal University of Science and Technology, S
 
 ## Projects
 
-### github
+### GitHub
 
-My personal [github account](https://github.com/mkhrussell/) hosts my hobby development projects.
+My personal [GitHub account (github.com/mkhrussell)](https://github.com/mkhrussell/) hosts my hobby development projects.
 
 ### blog
 
@@ -87,20 +89,22 @@ I write a programming blog at [mkhrussell.github.io](https://mkhrussell.github.i
 ## Awards
 
 `2014`
-__Iconic Team of 2nd Half 2014,__ For outstanding performace of the team.
+__Iconic Team of 2nd Half 2014,__ For outstanding performance of the team.
 
 `2013`
-__Icon of the Month - May 2013,__ For outstanding performace in the project.
+__Icon of the Month - May 2013,__ For outstanding performance in the project.
 
 `2012`
-__Icon of the Month - October 2012,__ For outstanding performace in the project.
+__Icon of the Month - October 2012,__ For outstanding performance in the project.
 
 `2010`
-__Airtel Team Award,__ For billing performance imporvement.
+__Airtel Team Award,__ For post-paid billing performance improvement.
 
 ## References
 
 Available on request.
+
+---
 
 ### Last updated
 December 2019

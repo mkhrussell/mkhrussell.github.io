@@ -61,12 +61,18 @@ body {
 	margin-left: 1em;*/
 }
 
+hr {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
 p {
 	position: relative;
 	left: 28%;
-	margin-bottom: 0.2em;
-	margin-right: 0;
-	width: 70%;
+	margin-bottom: 0.7em;
+	margin-top: 0.3em;
+	margin-right: 10%;
+	width: 65%;
 }
 
 code {
@@ -74,12 +80,12 @@ code {
 	font-size: 60%;
 	/*line-height: 1em;*/
 	font-family: Menlo,monospace,sans-serif;
-	color: #ccc;
+	/* color: #ccc; */
 }
 
 p code {
 	position: absolute;
-	left: -11%;
+	left: -18%;
 }
 
 
@@ -123,13 +129,15 @@ h1 {
 	font-size: 3em;
 	line-height: 1em;
 	position: relative;
-	left: 28%;
+	left: 15%;
 }
 
 h1+p { 
 	/*subtitle*/
+	top: 0.2em;
 	font-style: italic;
 	font-size: 110%;
+	left: 15%;
 }
 
 h2 {
@@ -167,8 +175,9 @@ a:hover {
 
 #webaddress {
 	margin-top: 1em;
+	margin-bottom: 1.4em;
 	position: relative;
-	left: 28%;
+	left: 15%;
 	color: #ccc;
 	font-family: Menlo,monospace,sans-serif;
 	font-size: 80%;
@@ -192,6 +201,6 @@ strong {
 	visibility: hidden;
 }
 
-
-
-
+#references+p {
+	margin-bottom: 1.7em;
+}
