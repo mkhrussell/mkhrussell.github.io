@@ -1,8 +1,11 @@
+{% assign profile = page.profile %}
 <!doctype html>
-<html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
 <head>
   <meta charset=utf-8 />
-  <title>Kamrul Hasan's CV</title>
+
+  {% include seo.html %}
+
   <link href="/assets/css/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
   <link href="/assets/css/cv-print.css" type="text/css" rel="stylesheet" media="print">
   <link href="/assets/css/academicons.min.css" rel="stylesheet">
@@ -14,6 +17,35 @@
 <body>
   <div id="main">
     <div id="content">
+      <h1 id="name">{{ profile.name }}</h1>
+      <p>{{ profile.designation }}</p>
+      <div id="webaddress">
+        {% if profile.links %}
+
+          {% for link in profile.links.row1 %}
+            {% if link.label and link.url %}
+              <i class="{{ link.icon | default: 'fa fa-link' }}"></i> <a href="{{ link.url }}" rel="nofollow noopener noreferrer">{{ link.label }}</a>
+              {% if forloop.last %}{% else %}|{% endif %}
+            {% endif %}
+          {% endfor %}
+          <br />
+          {% for link in profile.links.row2 %}
+            {% if link.label and link.url %}
+              <i class="{{ link.icon | default: 'fa fa-link' }}"></i> <a href="{{ link.url }}" rel="nofollow noopener noreferrer">{{ link.label }}</a>
+              {% if forloop.last %}{% else %}|{% endif %}
+            {% endif %}
+          {% endfor %}
+          <br />
+          {% for link in profile.links.row3 %}
+            {% if link.label and link.url %}
+              <i class="{{ link.icon | default: 'fa fa-link' }}"></i> <a href="{{ link.url }}" rel="nofollow noopener noreferrer">{{ link.label }}</a>
+              {% if forloop.last %}{% else %}|{% endif %}
+            {% endif %}
+          {% endfor %}
+
+        {% endif %}
+      </div>
+
     {{ content }}
     </div>
   </div>
