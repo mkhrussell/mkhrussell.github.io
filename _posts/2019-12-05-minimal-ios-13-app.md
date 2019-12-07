@@ -1,5 +1,5 @@
 ---
-title: "Minimal iOS 13 App"
+title: "Minimal iOS 13 App - Life Cycle Events"
 date: 2019-12-05T18:55:12+00:00
 author: Kamrul Hasan
 categories:
@@ -15,11 +15,13 @@ tags:
   - appdelegate
   - scenedelegate
   - xcode
+  - programmatically create ios app delegate and window
+  - programmatically
 ---
 
-For any iOS 13 app, you need an **AppDelegate** and a **SceneDelegate** and then you have to call **UIApplicationMain** function. You need an initial **UIViewController** object which you have to set as **rootViewController** property of the window object of the AppDelegate. In a typical iOS app, most of this work done through configurations burried inside Info.plist file leaving beginners in deep trouble in understanding the insights of the app ie. how it launches, what are the lifecycle events, etc.
+For any iOS 13 app, you need an **AppDelegate** and a **SceneDelegate** and then you have to call **UIApplicationMain** function. You need an initial **UIViewController** object which you have to set as **rootViewController** property of the window object of the AppDelegate. In a typical iOS app, most of this work done through configurations buried inside Info.plist file leaving beginners in deep trouble in understanding the insights of the app ie. how it launches, what are the lifecycle events, etc.
 
-In this app, I removed all the configurations and manually created everything needed to make beginners understand the whole app launching process.
+In this app, I removed all the configurations and **manually** created everything needed to make beginners understand the whole app launching process.
 
 1. App's entry point is UIApplicationMain. In 3rd parameter you can pass 'nil' instead of **NSStringFromClass(UIApplication.self)**, passing 'nil' will do the same thing. You can also pass a subclass of UIApplication, it is rarely done.
 
