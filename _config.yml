@@ -22,6 +22,8 @@ twitter_username: mkhrussell
 github_username: mkhrussell
 minimal_mistakes_skin: air
 search: true
+
+# Comments
 comments:
   provider: "facebook"
   facebook:
@@ -30,6 +32,13 @@ comments:
     num_posts: 5
     colorscheme: "light" # (default), "dark"
 
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-154132389-1"
+    anonymize_ip: false
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -37,7 +46,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Dhaka # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -67,6 +76,7 @@ author:
   name   : "Kamrul Hasan"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "A full time mobile application developer, a mentor and a father."
+  location : "Dhaka, Bangladesh" 
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
