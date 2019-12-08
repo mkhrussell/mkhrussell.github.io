@@ -22,6 +22,13 @@ twitter_username: mkhrussell
 github_username: mkhrussell
 minimal_mistakes_skin: air
 search: true
+comments:
+  provider: "facebook"
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid: "160629990691004"
+    num_posts: 5
+    colorscheme: "light" # (default), "dark"
 
 # Build settings
 markdown: kramdown
