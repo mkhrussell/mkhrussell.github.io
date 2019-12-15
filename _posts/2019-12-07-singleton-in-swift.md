@@ -1,5 +1,6 @@
 ---
 title: "Singleton Pattern in Swift"
+excerpt: "How to create Singleton classes in Swift."
 date: 2019-12-07T21:05:24+00:00
 author: Kamrul Hasan
 classes: wide

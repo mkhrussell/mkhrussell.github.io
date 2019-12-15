@@ -1,5 +1,6 @@
 ---
 title: "Minimal iOS 13 App - Life Cycle Events"
+excerpt: "A minimal iOS application to show how to create UIApplicationMain manually, demonstration of Application life cycle and ViewController Life Cycle using Swift."
 date: 2019-12-05T18:55:12+00:00
 author: Kamrul Hasan
 classes: wide

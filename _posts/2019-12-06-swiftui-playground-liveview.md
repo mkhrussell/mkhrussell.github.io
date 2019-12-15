@@ -1,5 +1,6 @@
 ---
 title: "Live View for SwiftUI in Xcode Playground"
+excerpt: "A simple example of how to see preview of SwiftUI in Xcode Playground."
 date: 2019-12-06T17:23:21+00:00
 author: Kamrul Hasan
 classes: wide

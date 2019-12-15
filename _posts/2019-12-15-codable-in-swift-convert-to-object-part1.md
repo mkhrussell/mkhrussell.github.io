@@ -1,5 +1,6 @@
 ---
 title: "Codable in Swift - Convert JSON Response to Swift Object - Part 1"
+excerpt: "How to convert JSON to Plain Old Swift Object (POSO) using Codable and JSONDecoder."
 date: 2019-12-15T07:09:27+00:00
 author: Kamrul Hasan
 classes: wide
