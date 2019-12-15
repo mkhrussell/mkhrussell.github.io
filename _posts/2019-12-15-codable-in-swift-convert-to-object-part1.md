@@ -47,7 +47,7 @@ For [user API: https://jsonplaceholder.typicode.com/users/1](https://jsonplaceho
 }
 ```
 
-Let's first create model structs based on the above JSON:
+Let's first create model structures based on the above JSON:
 
 ```swift
 struct Geo: Codable {
@@ -82,12 +82,17 @@ struct Company: Codable {
 struct User: Codable {
     let id: Int
     let name: String
-    let username: String
+    let nickname: String
     let email: String
     let address: Address
     let phone: String
     let website: String
     let company: Company
+
+    enum CodingKeys: String, CodingKey {
+        case id, name, email, address, phone, website, company
+        case nickname = "username"
+    }
 }
 ```
 
