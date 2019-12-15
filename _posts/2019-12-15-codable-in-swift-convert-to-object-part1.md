@@ -2,6 +2,7 @@
 title: "Codable in Swift - Convert JSON Response to Swift Object - Part 1"
 date: 2019-12-15T07:09:27+00:00
 author: Kamrul Hasan
+classes: wide
 categories:
   - blog
 tags:

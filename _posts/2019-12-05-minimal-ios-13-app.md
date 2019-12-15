@@ -2,6 +2,7 @@
 title: "Minimal iOS 13 App - Life Cycle Events"
 date: 2019-12-05T18:55:12+00:00
 author: Kamrul Hasan
+classes: wide
 categories:
   - blog
 tags:
