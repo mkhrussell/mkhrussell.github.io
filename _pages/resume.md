@@ -13,26 +13,26 @@ profile:
       - label: "mkhrussell.github.io"
         icon: "fa fa-link"
         url: "https://mkhrussell.github.io"
-      - label: "linkedin.com/in/mkhrussell"
+      - label: "/in/mkhrussell"
         icon: "fa fa-linkedin"
         url: "https://www.linkedin.com/in/mkhrussell"
-      - label: "github.com/mkhrussell"
+    row2:
+      - label: "/mkhrussell"
         icon: "fa fa-github"
         url: "https://github.com/mkhrussell"
-    row2:
-      - label: "stackoverflow.com/users/6037446/mkh-russell"
+      - label: "/users/6037446/mkh-russell"
         icon: "fa fa-stack-overflow"
         url: "https://stackoverflow.com/users/6037446/mkh-russell"
-      - label: "facebook.com/mkh.russell"
-        icon: "fa fa-facebook"
-        url: "https://www.facebook.com/mkh.russell"
-      - label: "instagram.com/mkhrussell"
-        icon: "fa fa-instagram"
-        url: "https://www.instagram.com/mkhrussell"
-    row3:
-      - label: "twitter.com/mkhrussell"
+      - label: "/mkhrussell"
         icon: "fa fa-twitter"
         url: "https://twitter.com/mkhrussell"
+    row3:
+      - label: "/mkh.russell"
+        icon: "fa fa-facebook"
+        url: "https://www.facebook.com/mkh.russell"
+      - label: "/mkhrussell"
+        icon: "fa fa-instagram"
+        url: "https://www.instagram.com/mkhrussell"
 ---
 ---
 ## Experienced in
