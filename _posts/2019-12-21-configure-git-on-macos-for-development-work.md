@@ -88,7 +88,7 @@ git config --global --edit
 ![git-config-edit.png](/assets/images/configure-git-on-macos/git-config-edit.png)
 
 {% capture notice-text %}
-1. [Homebrew](https://brew.sh/])
+1. [Homebrew](https://brew.sh/)
 2. [Visual Studio Code on macOS](https://code.visualstudio.com/docs/setup/mac)
 3. [Getting Started - First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 4. [Using VSCode as git mergetool and difftool](https://medium.com/faun/using-vscode-as-git-mergetool-and-difftool-2e241123abe7)
