@@ -1,15 +1,15 @@
 ---
 layout: cv
 permalink: /resume/
-title: "Résumé of Kamrul Hasan"
+title: "Résumé of Mohammad Kamrul Hasan"
 profile: 
-  name: "Kamrul Hasan"
-  designation: "Mobile Application Developer"
+  name: "Mohammad Kamrul Hasan"
+  designation: "Mobile Application Developer - Ex-Staff Engineer II (Assistant Principal Engineer)"
   links:
     row1:
-      - label: "mkhrussell@gmail.com"
+      - label: "mk2014.hasan@gmail.com"
         icon: "fa fa-envelope"
-        url: "mailto:mkhrussell@gmail.com"
+        url: "mailto:mk2014.hasan@gmail.com"
       - label: "mkhrussell.github.io"
         icon: "fa fa-link"
         url: "https://mkhrussell.github.io"
@@ -37,13 +37,13 @@ profile:
 ---
 ## Experienced in
 
-I am a full time mobile application developer at [Samsung R&D Institute Bangladesh (SRBD)](https://research.samsung.com/srbd). Here, I design and develop software and mentor a few other developers.
+I was a full time mobile application developer at [Samsung R&D Institute Bangladesh (SRBD)](https://research.samsung.com/srbd). At SRBD, I designed and developed software and led a few other developers.
 
 ## Professional Experience
 
-`Oct 2011 - To date` 
-__Samsung R&D Institute Bangladesh Ltd.__ - __Staff Engineer__:
-Lead developer and architect of a team, working on two iOS applications (one is already in AppStore).
+`Oct 2011 - Dec 2021` 
+__Samsung R&D Institute Bangladesh Ltd.__ - __Staff Engineer II (Assistant Principal Engineer)__:
+Lead developer and architect of a team, worked on two iOS applications (one is already in AppStore) and one Android application.
 
 `Dec 2010 - Oct 2011` 
 __IBM Bangladesh__ - __Assistant IT Specialist__ (Airtel outsourced their IT Division to IBM. Hence, my responsibilities were same as Airtel):
@@ -107,4 +107,4 @@ Available on request.
 ---
 
 ### Last updated
-December 2019
+February 2022
