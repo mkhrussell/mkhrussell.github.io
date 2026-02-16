@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamrul Hasan — Bio</title>
+  <meta name="description" content="Senior Android Engineer | Android Automotive | Kotlin | Clean Architecture" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="index.html">Kamrul Hasan</a>
+        <nav class="nav">
+          <a class="nav-link active" href="index.html">Bio</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </nav>
+      </div>
+
+      <div class="hero">
+        <h1>Senior Android Engineer</h1>
+        <p class="subtitle">
+          Android Automotive • Kotlin • Clean Architecture • CI/CD • Testing
+        </p>
+
+        <div class="badges">
+          <span class="badge">Montreal, QC, Canada</span>
+          <span class="badge">Canadian Citizen</span>
+          <span class="badge">Open to relocation across Canada</span>
+          <span class="badge">TN Visa Eligible (USMCA)</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="button" href="portfolio.html">View Portfolio</a>
+          <a class="button ghost" href="https://www.linkedin.com/in/mkhrussell/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button ghost" href="mailto:mk2014.hasan@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        Senior Android Engineer with 10+ years of experience delivering scalable Android applications across
+        automotive and consumer electronics domains. Strong expertise in Clean Architecture, modular architecture,
+        automated testing, and CI/CD optimization. Contributed to production systems at General Motors and Samsung
+        serving millions of users worldwide.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Core Expertise</h2>
+        <ul class="list">
+          <li>Clean Architecture, MVVM/MVI, modularization</li>
+          <li>Android Automotive OS (AAOS), AOSP, Soong</li>
+          <li>Kotlin, Coroutines, Jetpack Compose, Dagger/Hilt</li>
+          <li>Unit/UI testing: JUnit, Mockito, MockK, Espresso</li>
+          <li>CI/CD: Jenkins, GitHub Actions, Azure DevOps</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Languages</h2>
+        <ul class="list">
+          <li>English — Fluent</li>
+          <li>French — Basic conversational</li>
+        </ul>
+
+        <div class="spacer"></div>
+
+        <h2>Contact</h2>
+        <ul class="list compact">
+          <li><strong>Email:</strong> <a href="mailto:mk2014.hasan@gmail.com">mk2014.hasan@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mkhrussell/" target="_blank" rel="noreferrer">mkhrussell</a></li>
+          <li><strong>Portfolio:</strong> Available upon request</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Highlights</h2>
+      <div class="highlights">
+        <div class="highlight">
+          <div class="kpi">80%+</div>
+          <div class="kpi-label">Unit & UI test coverage (MockK + Espresso)</div>
+        </div>
+        <div class="highlight">
+          <div class="kpi">10M+</div>
+          <div class="kpi-label">Samsung Galaxy Wearable downloads</div>
+        </div>
+        <div class="highlight">
+          <div class="kpi">Android S → U</div>
+          <div class="kpi-label">Platform migration (Soong + Gradle)</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Kamrul Hasan</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamrul Hasan — Portfolio</title>
+  <meta name="description" content="Selected projects and impact as a Senior Android Engineer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header compact">
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="index.html">Kamrul Hasan</a>
+        <nav class="nav">
+          <a class="nav-link" href="index.html">Bio</a>
+          <a class="nav-link active" href="portfolio.html">Portfolio</a>
+        </nav>
+      </div>
+
+      <div class="page-title">
+        <h1>Portfolio</h1>
+        <p class="subtitle">Selected work, impact, and technical highlights.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>GM — In-Vehicle Infotainment HomeScreen (AAOS)</h2>
+      <p class="muted">
+        Senior Android Developer (via CIeNET) • Infotainment HomeScreen team • Android Automotive OS
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">Kotlin</span>
+        <span class="pill">AAOS / AOSP</span>
+        <span class="pill">Soong</span>
+        <span class="pill">Gradle</span>
+        <span class="pill">Clean Architecture</span>
+        <span class="pill">MockK</span>
+        <span class="pill">Espresso</span>
+        <span class="pill">Jenkins</span>
+      </div>
+
+      <h3>What I delivered</h3>
+      <ul class="list">
+        <li>Redesigned the HomeScreen app using Clean Architecture, improving modularity and maintainability</li>
+        <li>Led development of the Launcher module; contributed significantly to Split-View (Task View)</li>
+        <li>SME for Android architecture and code quality: code reviews + mentoring</li>
+        <li>Improved performance and stability of legacy components in production vehicle programs</li>
+        <li>Achieved 80%+ unit and UI test coverage with MockK and Espresso</li>
+        <li>Owned CI/CD pipelines for Android builds and automated testing</li>
+        <li>Implemented developer-focused Gradle build alongside production Soong build to accelerate dev/debug cycles</li>
+        <li>Led Android S → Android U migration across both Soong and Gradle build systems</li>
+        <li>Collaborated with platform, UX, and QA to align delivery with automotive performance and safety standards</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Samsung — Galaxy Wearable Manager (10M+ Downloads)</h2>
+      <p class="muted">Staff Engineer II • Samsung R&D Institute Bangladesh</p>
+
+      <div class="pill-row">
+        <span class="pill">Kotlin</span>
+        <span class="pill">Java</span>
+        <span class="pill">MVVM</span>
+        <span class="pill">REST APIs</span>
+        <span class="pill">Android Architecture Components</span>
+        <span class="pill">JUnit</span>
+        <span class="pill">Mockito</span>
+        <span class="pill">Espresso</span>
+      </div>
+
+      <h3>What I delivered</h3>
+      <ul class="list">
+        <li>Designed and delivered the backup/restore feature for Samsung Galaxy Wearable Manager</li>
+        <li>Implemented MVVM architecture and integrated REST APIs leveraging Android Architecture Components</li>
+        <li>Performed unit and UI testing using JUnit, Mockito, and Espresso</li>
+        <li>Supported OS upgrades and device model launches for global smartphone releases</li>
+        <li>Contributed to cross-platform initiatives (React Native) and iOS (Swift/SwiftUI) as needed</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Tooling & Quality</h2>
+        <ul class="list">
+          <li>CI/CD automation for Android build + test execution</li>
+          <li>Test strategy: unit + UI coverage and regression prevention</li>
+          <li>Code quality practices: reviews, mentoring, standards</li>
+          <li>Build systems: Gradle + Soong workflows</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Awards & Recognition</h2>
+        <ul class="list">
+          <li>Recognition of Special Contribution — Samsung Bot Care (2019)</li>
+          <li>Iconic Team — Samsung Bangladesh (2014)</li>
+          <li>Icon of the Month — Samsung Bangladesh (2012, 2013)</li>
+          <li>Airtel Team Award — Airtel Bangladesh (2010)</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Kamrul Hasan</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
