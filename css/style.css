@@ -254,13 +254,21 @@ footer{padding:30px 0 50px; border-top:1px solid var(--line); color:var(--muted)
 
 .screenshotGrid img{
   width:100%;
-  height:100%;
-  object-fit:cover;
+  max-width:520px;     /* 🔹 limit horizontal growth */
+  max-height:320px;    /* 🔹 limit vertical growth */
+  object-fit:contain;  /* 🔹 keep full image visible */
   border-radius:12px;
   border:1px solid var(--line);
   box-shadow: var(--shadow);
-  transition: transform .2s ease;
-  cursor:pointer;
+  margin:auto;         /* 🔹 center inside grid cell */
+  display:block;
+}
+
+@media (max-width: 700px){
+  .screenshotGrid img{
+    max-width:100%;
+    max-height:260px;
+  }
 }
 
 .screenshotGrid img:hover{
