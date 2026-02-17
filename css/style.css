@@ -266,3 +266,63 @@ footer{padding:30px 0 50px; border-top:1px solid var(--line); color:var(--muted)
 .screenshotGrid img:hover{
   transform: scale(1.02);
 }
+
+/* ===== YouTube link cards (non-embed) ===== */
+
+.videoLinks{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:14px;
+  margin-top:16px;
+}
+
+@media (max-width: 700px){
+  .videoLinks{
+    grid-template-columns: 1fr;
+  }
+}
+
+.videoLinkCard{
+  display:block;
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  text-decoration:none;
+  background: rgba(255,255,255,.03);
+  box-shadow: var(--shadow);
+  transition: transform .15s ease;
+}
+
+.videoLinkCard:hover{
+  transform: translateY(-2px);
+}
+
+.videoLinkCard img{
+  width:100%;
+  display:block;
+}
+
+.videoLinkContent{
+  padding:12px;
+}
+
+.videoLinkContent h3{
+  margin:0 0 6px;
+  font-size:16px;
+}
+
+.videoLinkContent p{
+  margin:0;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.disclaimer{
+  margin-top:16px;
+  padding:10px 12px;
+  font-size:13px;
+  color:var(--muted);
+  border:1px dashed var(--line);
+  border-radius:10px;
+  background: rgba(255,255,255,.03);
+}
