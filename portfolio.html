@@ -3,114 +3,334 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kamrul Hasan — Portfolio Details (AAOS/AOSP, Testing, CI/CD, Android)." />
   <title>Kamrul Hasan — Portfolio</title>
-  <meta name="description" content="Selected projects and impact as a Senior Android Engineer." />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="kamrul_logo_192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="site-header compact">
-    <div class="container">
-      <div class="topbar">
-        <a class="brand" href="index.html">Kamrul Hasan</a>
-        <nav class="nav">
-          <a class="nav-link" href="index.html">Bio</a>
-          <a class="nav-link active" href="portfolio.html">Portfolio</a>
-        </nav>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="index.html" aria-label="Back to home">
+        <img src="kamrul_logo_192.png" alt="Kamrul Hasan" class="brandLogo" />
+        <span>Kamrul Hasan</span>
+      </a>
+
+      <div class="navlinks" id="navlinks">
+        <a href="#gm-homescreen">GM HomeScreen</a>
+        <a href="#wearable-manager">Wearable Manager</a>
+        <a href="#side-projects">Side Projects</a>
+        <a href="Kamrul_Hasan_Resume_2026-02.pdf" target="_blank" rel="noreferrer">Resume</a>
       </div>
 
-      <div class="page-title">
-        <h1>Portfolio</h1>
-        <p class="subtitle">Selected work, impact, and technical highlights.</p>
+      <div class="row">
+        <button class="btn ghost" id="themeBtn" type="button" aria-label="Toggle theme">
+          <span class="icon" aria-hidden="true">🌓</span>
+          Theme
+        </button>
+        <button class="btn menuBtn" id="menuBtn" type="button" aria-label="Open menu">
+          <span class="icon" aria-hidden="true">☰</span>
+          Menu
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="portfolioHero">
+    <div class="wrap portfolioGrid">
+      <div class="card pad">
+        <div class="pill">Portfolio Details • AAOS / AOSP • Testing • CI/CD</div>
+        <h1>Selected work and deeper technical notes</h1>
+        <p>
+          This page expands on the “Featured Work” section. Some items are constrained by confidentiality,
+          so I focus on architecture, responsibilities, and outcomes rather than proprietary specifics.
+        </p>
+
+        <div class="row" style="margin-top:10px">
+          <a class="btn primary" href="index.html#projects">← Back to Featured Work</a>
+          <a class="btn" href="https://www.linkedin.com/in/mkhrussell/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://github.com/mkhrussell" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <div class="metaRow">
+          <span class="pill">Kotlin • Java</span>
+          <span class="pill">Compose • MVVM/MVI</span>
+          <span class="pill">Soong • Gradle</span>
+          <span class="pill">JUnit • MockK • Espresso</span>
+        </div>
+      </div>
+
+      <aside class="card pad">
+        <div class="sectionTop">
+          <h2 style="margin:0">Jump to</h2>
+        </div>
+        <div class="toc">
+          <a href="#gm-homescreen">🚗 GM Infotainment - HomeScreen</a>
+          <a href="#wearable-manager">⌚ Samsung Galaxy Wearable Manager</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- GM HomeScreen -->
+  <section id="gm-homescreen" class="detail">
+    <div class="wrap">
+      <div class="card pad">
+        <h2>GM Infotainment - HomeScreen</h2>
+        <p>
+          Core in-vehicle HomeScreen experience built on Android Automotive OS. Work included architecture modernization,
+          module ownership, and stability/performance improvements.
+        </p>
+
+        <div class="kpi">
+          <span class="pill">Role: Senior Android Developer</span>
+          <span class="pill">Domain: Automotive • AAOS</span>
+          <span class="pill">Focus: Architecture • Modularization</span>
+          <span class="pill">Testing: Unit + UI</span>
+        </div>
+
+        <div class="subgrid">
+          <div class="box">
+            <h3>What I owned</h3>
+            <ul>
+              <li>Led the Launcher module and contributed to Split-View (Task View).</li>
+              <li>Drove Clean Architecture refactors to improve maintainability and testability.</li>
+              <li>Supported platform/app build integration (Soong + developer-friendly Gradle).</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Tech highlights</h3>
+            <ul>
+              <li>AAOS / AOSP integration points, lifecycle & system events.</li>
+              <li>Modular structure, clear boundaries, dependency direction control.</li>
+              <li>Performance and stability work for legacy components.</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Testing & quality</h3>
+            <ul>
+              <li>Unit + UI testing practices to reduce regressions.</li>
+              <li>Code reviews and mentorship with quality guardrails.</li>
+              <li>CI validation gates to keep mainline stable.</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Platform upgrade</h3>
+            <ul>
+              <li>Migration from Android S to Android U (Soong + Gradle paths).</li>
+              <li>Compatibility checks and iterative fixes across release cycles.</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Tooling & practices</h3>
+            <ul>
+              <li>MockK / JUnit for unit testing; Espresso for UI testing.</li>
+              <li>Build + test automation integrated into developer workflow.</li>
+              <li>Quality checks (reviews, static analysis where applicable).</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Results</h3>
+            <ul>
+              <li>Released to production: millions owners of newers GMC cars (GMC, Hummer and Chevy) models are using the app</li>
+              <li>Improved Unit test coverage 80%+, build time to less than 5 minutes.</li>
+            </ul>
+          </div>
+
+        </div>        
+
+        <div class="row" style="margin-top:14px">
+          <a class="btn" href="#top">Back to top</a>
+          <a class="btn" href="index.html#projects">Back to Featured Work</a>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <section class="card">
-      <h2>GM — In-Vehicle Infotainment HomeScreen (AAOS)</h2>
-      <p class="muted">
-        Senior Android Developer (via CIeNET) • Infotainment HomeScreen team • Android Automotive OS
-      </p>
+  <!-- Wearable Manager -->
+  <section id="wearable-manager" class="detail">
+    <div class="wrap">
+      <div class="card pad">
+        <h2>Samsung Galaxy Wearable Manager</h2>
+        <p>
+          Built and shipped backup/restore capabilities for a large-scale consumer Android app used to manage Galaxy Wear devices.
+          Focus on UX reliability, data integrity, and maintainable architecture.
+        </p>
 
-      <div class="pill-row">
-        <span class="pill">Kotlin</span>
-        <span class="pill">AAOS / AOSP</span>
-        <span class="pill">Soong</span>
-        <span class="pill">Gradle</span>
-        <span class="pill">Clean Architecture</span>
-        <span class="pill">MockK</span>
-        <span class="pill">Espresso</span>
-        <span class="pill">Jenkins</span>
+        <div class="kpi">
+          <span class="pill">Domain: Consumer • Android</span>
+          <span class="pill">Pattern: MVVM</span>
+          <span class="pill">Scale: 10M+ downloads (app)</span>
+        </div>
+
+        <div class="subgrid">
+          <div class="box">
+            <h3>What I delivered</h3>
+            <ul>
+              <li>Designed and implemented backup/restore feature end-to-end.</li>
+              <li>Integrated REST APIs and Android Architecture Components.</li>
+              <li>Ensured maintainability with clear separation of concerns (MVVM).</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Quality & upgrades</h3>
+            <ul>
+              <li>Unit and UI testing (JUnit / Mockito / Espresso).</li>
+              <li>OS upgrade support and device model launches.</li>
+              <li>Stability and bug fix iterations across releases.</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Impact narrative</h3>
+            <ul>
+              <li>Reliability for user data workflows (restore correctness matters).</li>
+              <li>Reduced user friction during device migration/upgrade scenarios.</li>
+              <li>Improved supportability with clean modular design.</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Optional additions</h3>
+            <ul>
+              <li>Add screenshots (only if allowed) or abstract “user flow” diagrams.</li>
+              <li>Add a “Responsibilities” checklist recruiters can skim fast.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:14px">
+          <a class="btn" href="#top">Back to top</a>
+          <a class="btn" href="index.html#projects">Back to Featured Work</a>
+        </div>
       </div>
+    </div>
+  </section>
+  <section id="side-projects" class="detail">
+    <div class="wrap">
+      <div class="card pad">
+        <div class="sectionTop">
+          <div>
+            <h2>Side / Pet Projects</h2>
+            <p>Smaller experiments and open-source work. These are public and highlight my skills and hands-on coding style.</p>
+          </div>
 
-      <h3>What I delivered</h3>
-      <ul class="list">
-        <li>Redesigned the HomeScreen app using Clean Architecture, improving modularity and maintainability</li>
-        <li>Led development of the Launcher module; contributed significantly to Split-View (Task View)</li>
-        <li>SME for Android architecture and code quality: code reviews + mentoring</li>
-        <li>Improved performance and stability of legacy components in production vehicle programs</li>
-        <li>Achieved 80%+ unit and UI test coverage with MockK and Espresso</li>
-        <li>Owned CI/CD pipelines for Android builds and automated testing</li>
-        <li>Implemented developer-focused Gradle build alongside production Soong build to accelerate dev/debug cycles</li>
-        <li>Led Android S → Android U migration across both Soong and Gradle build systems</li>
-        <li>Collaborated with platform, UX, and QA to align delivery with automotive performance and safety standards</li>
-      </ul>
-    </section>
+          <div class="row">
+            <a class="btn" href="https://github.com/mkhrussell" target="_blank" rel="noreferrer">GitHub Profile</a>
+          </div>
+        </div>
 
-    <section class="card">
-      <h2>Samsung — Galaxy Wearable Manager (10M+ Downloads)</h2>
-      <p class="muted">Staff Engineer II • Samsung R&D Institute Bangladesh</p>
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="proj" data-tags="android,kotlin,compose">
+            <div class="tags">
+              <span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">Compose</span>
+            </div>
+            <h3>Project Name (Compose Demo)</h3>
+            <p>
+              One-liner: what it is + what it demonstrates (architecture, UI, performance, etc.).
+            </p>
+            <div class="projLinks">
+              <a class="btn" href="https://github.com/mkhrussell/REPO_NAME" target="_blank" rel="noreferrer">Code</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Demo</a>
+            </div>
+          </article>
 
-      <div class="pill-row">
-        <span class="pill">Kotlin</span>
-        <span class="pill">Java</span>
-        <span class="pill">MVVM</span>
-        <span class="pill">REST APIs</span>
-        <span class="pill">Android Architecture Components</span>
-        <span class="pill">JUnit</span>
-        <span class="pill">Mockito</span>
-        <span class="pill">Espresso</span>
+          <!-- Project 2 -->
+          <article class="proj" data-tags="aosp,aaos,tools">
+            <div class="tags">
+              <span class="tag">AAOS/AOSP</span><span class="tag">Tools</span>
+            </div>
+            <h3>Build / Dev Tooling Utility</h3>
+            <p>
+              Small tool/script improving dev workflow (build, testing, linting, CI helpers).
+            </p>
+            <div class="projLinks">
+              <a class="btn" href="https://github.com/mkhrussell/REPO_NAME" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="proj" data-tags="testing,ci-cd,automation">
+            <div class="tags">
+              <span class="tag">Testing</span><span class="tag">CI/CD</span><span class="tag">Automation</span>
+            </div>
+            <h3>Android Testing Playground</h3>
+            <p>
+              Example repo showing unit/UI testing patterns, mocking, and stability practices.
+            </p>
+            <div class="projLinks">
+              <a class="btn" href="https://github.com/mkhrussell/REPO_NAME" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="row" style="margin-top:14px">
+          <a class="btn" href="#top">Back to top</a>
+          <a class="btn" href="index.html#projects">Back to Featured Work</a>
+        </div>
       </div>
+    </div>
+  </section>
+</main>
 
-      <h3>What I delivered</h3>
-      <ul class="list">
-        <li>Designed and delivered the backup/restore feature for Samsung Galaxy Wearable Manager</li>
-        <li>Implemented MVVM architecture and integrated REST APIs leveraging Android Architecture Components</li>
-        <li>Performed unit and UI testing using JUnit, Mockito, and Espresso</li>
-        <li>Supported OS upgrades and device model launches for global smartphone releases</li>
-        <li>Contributed to cross-platform initiatives (React Native) and iOS (Swift/SwiftUI) as needed</li>
-      </ul>
-    </section>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="year"></span> Kamrul Hasan. Built with HTML/CSS/JS.</div>
+    <div class="row"><a href="#top">Back to top ↑</a></div>
+  </div>
+</footer>
 
-    <section class="grid">
-      <div class="card">
-        <h2>Tooling & Quality</h2>
-        <ul class="list">
-          <li>CI/CD automation for Android build + test execution</li>
-          <li>Test strategy: unit + UI coverage and regression prevention</li>
-          <li>Code quality practices: reviews, mentoring, standards</li>
-          <li>Build systems: Gradle + Soong workflows</li>
-        </ul>
-      </div>
+<script>
+  // Theme toggle (shared behavior with index)
+  const root = document.documentElement;
+  const themeBtn = document.getElementById("themeBtn");
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) root.setAttribute("data-theme", savedTheme);
 
-      <div class="card">
-        <h2>Awards & Recognition</h2>
-        <ul class="list">
-          <li>Recognition of Special Contribution — Samsung Bot Care (2019)</li>
-          <li>Iconic Team — Samsung Bangladesh (2014)</li>
-          <li>Icon of the Month — Samsung Bangladesh (2012, 2013)</li>
-          <li>Airtel Team Award — Airtel Bangladesh (2010)</li>
-        </ul>
-      </div>
-    </section>
+  themeBtn.addEventListener("click", () => {
+    const next = root.getAttribute("data-theme") === "light" ? "" : "light";
+    if (next) root.setAttribute("data-theme", next);
+    else root.removeAttribute("data-theme");
+    localStorage.setItem("theme", next);
+  });
 
-    <footer class="footer">
-      <p>© <span id="year"></span> Kamrul Hasan</p>
-    </footer>
-  </main>
+  // Mobile menu
+  const menuBtn = document.getElementById("menuBtn");
+  const navlinks = document.getElementById("navlinks");
+  menuBtn.addEventListener("click", () => navlinks.classList.toggle("open"));
+  navlinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => navlinks.classList.remove("open")));
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  // Active nav link on scroll
+  const ids = ["top","gm-homescreen","release-reliability","wearable-manager"];
+  const sections = ids.map(id => document.getElementById(id));
+  const navAnchors = [...document.querySelectorAll(".navlinks a")];
+
+  const setActive = () => {
+    const y = window.scrollY + 130;
+    let current = "top";
+    for (const s of sections) if (s.offsetTop <= y) current = s.id;
+    navAnchors.forEach(a => {
+      const href = a.getAttribute("href");
+      a.classList.toggle("active", href === "#" + current || (current === "top" && href === "#top"));
+    });
+  };
+  window.addEventListener("scroll", setActive);
+  setActive();
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

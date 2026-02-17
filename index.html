@@ -3,107 +3,404 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kamrul Hasan — Bio</title>
-  <meta name="description" content="Senior Android Engineer | Android Automotive | Kotlin | Clean Architecture" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Kamrul Hasan — Senior Android Engineer (AAOS/AOSP). Clean Architecture, testing, CI/CD." />
+  <title>Kamrul Hasan</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="kamrul_logo_192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="topbar">
-        <a class="brand" href="index.html">Kamrul Hasan</a>
-        <nav class="nav">
-          <a class="nav-link active" href="index.html">Bio</a>
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </nav>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top" aria-label="Home">
+        <img src="kamrul_logo_192.png" alt="Kamrul Hasan" class="brandLogo" />
+        <span>Kamrul Hasan</span>
+      </a>
+
+      <div class="navlinks" id="navlinks">
+        <a href="#projects">Featured Work</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="Kamrul_Hasan_Resume_2026-02.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </div>
 
-      <div class="hero">
-        <h1>Senior Android Engineer</h1>
-        <p class="subtitle">
-          Android Automotive • Kotlin • Java • Clean Architecture • CI/CD • Testing
+      <div class="row">
+        <button class="btn ghost" id="themeBtn" type="button" aria-label="Toggle theme">
+          <span class="icon" aria-hidden="true">🌓</span>
+          Theme
+        </button>
+        <button class="btn menuBtn" id="menuBtn" type="button" aria-label="Open menu">
+          <span class="icon" aria-hidden="true">☰</span>
+          Menu
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap grid">
+      <div class="card pad">
+        <div class="pill">🇨🇦 Canadian Citizen • US/Canada relocation • TN visa eligible</div>
+        <h1>
+          Hi, I’m <span style="color:var(--text)">Kamrul Hasan</span>.<br/>
+          Senior Android Engineer building scalable apps for Mobile and AAOS/AOSP.
+        </h1>
+        <p>
+          Senior Android Engineer with 10+ years of experience delivering production-grade apps across mobile and Android Automotive (AAOS/AOSP), with a focus on scalable architecture, quality, and fast, reliable releases.
         </p>
 
-        <div class="badges">
-          <span class="badge">Montreal, QC, Canada</span>
-          <span class="badge">Canadian Citizen</span>
-          <span class="badge">Open to relocation across Canada</span>
-          <span class="badge">TN Visa Eligible (USMCA)</span>
+        <!-- HERO BUTTONS -->
+        <div class="heroActions">
+        <a class="btn primary" href="#projects">View Featured Work</a>
+        <a class="btn" href="https://www.linkedin.com/in/mkhrussell/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="https://github.com/mkhrussell" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="Kamrul_Hasan_Resume_2026-02.pdf" target="_blank" rel="noreferrer">Resume</a>
         </div>
 
-        <div class="cta-row">
-          <a class="button" href="portfolio.html">View Portfolio</a>
-          <a class="button ghost" href="https://www.linkedin.com/in/mkhrussell/" target="_blank" rel="noreferrer">LinkedIn</a>
+
+        <div class="metaRow">
+          <span class="pill">📍 Montreal, QC, Canada</span>
+          <span class="pill">🧩 Kotlin • Java • Jetpack Compose • Dagger/Hilt</span>
+          <span class="pill">🚗 Mobile • AAOS • AOSP • Soong • Gradle</span>
+          <span class="pill">✅ Testing • CI/CD</span>
+        </div>
+      </div>
+
+      <aside class="card pad profileCard">
+        <img
+          class="profilePhoto"
+          src="kamrul_profile_picture.jpg"
+          alt="Kamrul Hasan"
+        />
+
+        <h2 style="margin-bottom:6px">Kamrul Hasan</h2>
+
+        <p style="margin-bottom:14px">
+          Senior Android Engineer
+        </p>
+
+        <div class="timeline" style="text-align:left">
+          <div class="item">
+            <strong>GM Infotainment - HomeScreen</strong><br/>
+            <small>Improved maintainability</small>
+          </div>
+          <div class="item">
+            <strong>Apps Used by Millions</strong><br/>
+            <small>Delivered mobile and AAOS experiences at global scale</small>
+          </div>
+          <div class="item">
+            <strong>Release Confidence</strong><br/>
+            <small>Reduced regression risk across releases</small>
+          </div>
+          <div class="item">
+            <strong>Platform Migration</strong><br/>
+            <small>Delivered platform migration with minimal disruption</small>
+          </div>
+          <div class="item">
+            <strong>Developer Productivity Boost</strong><br/>
+            <small>Reduced build–test cycle from 20 minutes to under 5 minutes</small>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="sectionTop">
+        <div>
+          <h2>Featured Work</h2>
+          <p>Representative work based on production experience.</p>
+        </div>
+
+        <div class="filters">
+          <label class="sr" for="search">Search projects</label>
+          <input class="input" id="search" type="search" placeholder="Search (e.g., Mobile, AAOS, CI/CD, testing…)" />
+          <div class="chips" id="chips"></div>
+        </div>
+      </div>
+
+      <div class="projects" id="projectGrid">
+        <article class="proj" data-tags="aaos,aosp,architecture,automotive,mvvm">
+          <div class="tags">
+            <span class="tag">AAOS</span><span class="tag">Clean Arch</span><span class="tag">Automotive</span><span class="tag">MVVM</span>
+          </div>
+          <h3>GM Infotainment - HomeScreen</h3>
+          <p>Redesigned in-vehicle HomeScreen using Clean Architecture; led Launcher module and contributed to Split-View (Task View).</p>
+          <div class="projLinks">
+            <a class="btn" href="portfolio.html#gm-homescreen">Details</a>
+          </div>
+        </article>
+
+        <article class="proj" data-tags="android,mobile,consumer,mvvm">
+          <div class="tags">
+            <span class="tag">Android</span><span class="tag">Mobile</span><span class="tag">MVVM</span><span class="tag">Consumer</span>
+          </div>
+          <h3>Samsung Galaxy Wearable Manager</h3>
+          <p>Designed and delivered backup/restore feature (10M+ downloads), enabling connectivity and management across Galaxy Watch models.</p>
+          <div class="projLinks">
+            <a class="btn" href="portfolio.html#wearable-manager">Details</a>
+          </div>
+        </article>
+
+        <article class="proj" data-tags="android,kotlin,compose,aaos,aosp,mvvm,mvi">
+          <div class="tags">
+            <span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">Compose</span><span class="tag">Clean Arch</span>
+            <span class="tag">MVVM</span><span class="tag">MVI</span>
+          </div>
+          <h3>Side / Pet Projects</h3>
+          <p>Smaller experiments and open-source work. These are public and highlight my skills and hands-on coding style.</p>
+          <div class="projLinks">
+            <a class="btn" href="portfolio.html#side-projects">Details</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap grid">
+      <div class="card pad">
+        <h2>About</h2>
+        <p>
+          Over the last decade, I’ve worked across both consumer (mobile) and in-vehicle Android platforms, often leading architecture improvements and stability initiatives.
+          I enjoy simplifying complex systems, mentoring teammates through code reviews, and building foundations that let teams move fast without breaking things.
+        </p>
+        <div class="row">
+          <span class="pill">✅ Clean Architecture & modularization</span>
+          <span class="pill">✅ Unit/UI testing</span>
+          <span class="pill">✅ CI/CD optimization</span>
+        </div>
+      </div>
+
+      <div class="card pad">
+        <h2>Core Skills</h2>
+        <p>Kotlin/Java • App + platform-layer Android.</p>
+        <div class="row">
+          <span class="pill">Kotlin</span><span class="pill">Java</span>
+          <span class="pill">MVVM / MVI</span><span class="pill">Coroutines</span>
+          <span class="pill">Jetpack Compose</span><span class="pill">Dagger/Hilt</span>
+          <span class="pill">AOSP</span><span class="pill">AAOS</span>
+          <span class="pill">Soong</span><span class="pill">Gradle</span>
+          <span class="pill">JUnit</span><span class="pill">Mockito</span><span class="pill">MockK</span><span class="pill">Espresso</span>
+          <span class="pill">Jenkins</span><span class="pill">GitHub Actions</span><span class="pill">Azure DevOps</span>
+          <span class="pill">Git</span><span class="pill">Gerrit</span><span class="pill">Jira</span><span class="pill">SonarQube</span>
+        </div>
+      </div>
+      <div class="card pad">
+        <h2>Languages</h2>
+        <div class="row">
+          <span class="pill">English — Fluent</span>
+          <span class="pill">French — Basic conversational</span>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <section class="card">
-      <h2>About</h2>
+  <section id="experience">
+    <div class="wrap">
+      <h2>Professional Experience</h2>
+      <p>Impact-focused highlights from recent roles.</p>
+
+      <div class="timeline">
+        <div class="item">
+          <strong>Senior Android Developer — General Motors (via CIeNET Technologies)</strong><br/>
+          <small>Markham, ON, Canada • May 2022 — Dec 2025</small>
+          <ul>
+            <li>Redesigned the in-vehicle HomeScreen Android app using Clean Architecture to improve modularity and maintainability.</li>
+            <li>Led Launcher module development and contributed to Split-View (Task View) within the AAOS infotainment platform.</li>
+            <li>Acted as SME for architecture and code quality, performing deep code reviews and mentoring engineers.</li>
+            <li>Improved performance/stability of legacy components; reduced regression risk and improved release reliability.</li>
+            <li>Achieved 80%+ unit and UI test coverage using MockK and Espresso.</li>
+            <li>Owned CI/CD pipelines for automated testing; reduced manual validation and accelerated release cycles.</li>
+            <li>Implemented a developer-focused Gradle build alongside production Soong, improving dev/debug productivity.</li>
+            <li>Migrated HomeScreen from Android S to Android U across Soong and Gradle build systems.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <strong>Staff Engineer II — Samsung R&D Institute Bangladesh (SRBD)</strong><br/>
+          <small>Dhaka, Bangladesh • 2011 — 2021</small>
+          <ul>
+            <li>Designed and delivered backup/restore for Samsung Galaxy Wearable Manager (10M+ downloads).</li>
+            <li>Implemented MVVM and integrated REST APIs with Android Architecture Components.</li>
+            <li>Maintained quality with unit/UI testing (JUnit, Mockito, Espresso).</li>
+            <li>Supported OS upgrades and device model launches for global smartphone releases.</li>
+            <li>Contributed to cross-platform initiatives including React Native and iOS (Swift/SwiftUI).</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <strong>Assistant IT Specialist — IBM Bangladesh</strong><br/>
+          <small>Dhaka, Bangladesh • Dec 2010 — Oct 2011</small>
+          <ul>
+            <li>Designed and developed Value Added Service (VAS) solutions for Airtel.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <strong>Associate IT Specialist — Airtel Bangladesh</strong><br/>
+          <small>Dhaka, Bangladesh • Apr 2009 — Dec 2010</small>
+          <ul>
+            <li>Designed and developed Value Added Service (VAS) solutions for Airtel.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <strong>Programmer — Center for Environmental and Geographic Information Services</strong><br/>
+          <small>Dhaka, Bangladesh • Mar 2007 — Mar 2009</small>
+          <ul>
+            <li>Developed GIS software using ASP.NET and C#.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap grid">
+      <div class="card pad">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="item">
+            <strong>B.Sc. in Computer Science & Engineering</strong><br/>
+            <small>Shahjalal University of Science and Technology • 2006</small><br/>
+            <small>WES equivalence obtained.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="card pad">
+        <h2>Awards</h2>
+        <div class="timeline">
+          <div class="item"><strong>Recognition of Special Contribution — Samsung Bot Care</strong><br/><small>Jan 2019</small></div>
+          <div class="item"><strong>Iconic Team — Samsung Bangladesh</strong><br/><small>Dec 2014</small></div>
+          <div class="item"><strong>Icon of the Month — Samsung Bangladesh</strong><br/><small>May 2013</small></div>
+          <div class="item"><strong>Icon of the Month — Samsung Bangladesh</strong><br/><small>Oct 2012</small></div>
+          <div class="item"><strong>Airtel Team Award — Airtel Bangladesh</strong><br/><small>Aug 2010</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <div class="wrap">
+    <div class="card pad">
+      <h2>Contact</h2>
       <p>
-        Senior Android Engineer with 10+ years of experience delivering scalable Android applications across
-        automotive and consumer electronics domains. Strong expertise in Clean Architecture, modular architecture,
-        automated testing, and CI/CD optimization. Contributed to production systems at General Motors and Samsung
-        serving millions of users worldwide.
+        Feel free to connect with me for Android Mobile, AOSP/AAOS opportunities and collaborations.
       </p>
-    </section>
 
-    <section class="grid">
-      <div class="card">
-        <h2>Core Expertise</h2>
-        <ul class="list">
-          <li>Clean Architecture, MVVM/MVI, modularization</li>
-          <li>Android Automotive OS (AAOS), AOSP, Soong</li>
-          <li>Kotlin, Coroutines, Jetpack Compose, Dagger/Hilt</li>
-          <li>Unit/UI testing: JUnit, Mockito, MockK, Espresso</li>
-          <li>CI/CD: Jenkins, GitHub Actions, Azure DevOps</li>
-        </ul>
+      <div class="row">
+        <a class="btn primary" href="https://www.linkedin.com/in/mkhrussell/" target="_blank" rel="noreferrer">
+          LinkedIn
+        </a>
+
+        <a class="btn" href="https://github.com/mkhrussell" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
       </div>
+    </div>
+  </div>
+</section>
+</main>
 
-      <div class="card">
-        <h2>Languages</h2>
-        <ul class="list">
-          <li>English — Fluent</li>
-          <li>French — Basic conversational</li>
-        </ul>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="year"></span> Kamrul Hasan. Built with HTML/CSS/JS.</div>
+    <div class="row"><a href="#top">Back to top ↑</a></div>
+  </div>
+</footer>
 
-        <div class="spacer"></div>
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById("themeBtn");
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) root.setAttribute("data-theme", savedTheme);
 
-        <h2>Contact</h2>
-        <ul class="list compact">
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mkhrussell/" target="_blank" rel="noreferrer">https://www.linkedin.com/in/mkhrussell/</a></li>
-          <li><strong>Portfolio:</strong> <a class="nav-link" href="portfolio.html">portfolio.html</a></li>
-        </ul>
-      </div>
-    </section>
+  themeBtn.addEventListener("click", () => {
+    const next = root.getAttribute("data-theme") === "light" ? "" : "light";
+    if (next) root.setAttribute("data-theme", next);
+    else root.removeAttribute("data-theme");
+    localStorage.setItem("theme", next);
+  });
 
-    <section class="card">
-      <h2>Highlights</h2>
-      <div class="highlights">
-        <div class="highlight">
-          <div class="kpi">80%+</div>
-          <div class="kpi-label">Unit & UI test coverage (MockK + Espresso)</div>
-        </div>
-        <div class="highlight">
-          <div class="kpi">10M+</div>
-          <div class="kpi-label">Samsung Galaxy Wearable downloads</div>
-        </div>
-        <div class="highlight">
-          <div class="kpi">Android S → U</div>
-          <div class="kpi-label">Platform migration (Soong + Gradle)</div>
-        </div>
-      </div>
-    </section>
+  const menuBtn = document.getElementById("menuBtn");
+  const navlinks = document.getElementById("navlinks");
+  menuBtn.addEventListener("click", () => navlinks.classList.toggle("open"));
+  navlinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => navlinks.classList.remove("open")));
 
-    <footer class="footer">
-      <p>© <span id="year"></span> Kamrul Hasan</p>
-    </footer>
-  </main>
+  const sections = ["projects","about","experience","education","contact"].map(id => document.getElementById(id));
+  const navAnchors = [...document.querySelectorAll(".navlinks a")];
+  const setActive = () => {
+    const y = window.scrollY + 120;
+    let current = "projects";
+    for (const s of sections) if (s.offsetTop <= y) current = s.id;
+    navAnchors.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + current));
+  };
+  window.addEventListener("scroll", setActive);
+  setActive();
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  const cards = [...document.querySelectorAll(".proj")];
+  const chipWrap = document.getElementById("chips");
+  const search = document.getElementById("search");
+  const allTags = Array.from(new Set(cards.flatMap(c => c.dataset.tags.split(",").map(t => t.trim())))).sort();
+  let activeTag = "all";
+
+  const makeChip = (tag) => {
+    const el = document.createElement("button");
+    el.type = "button";
+    el.className = "chip" + (tag === "all" ? " active" : "");
+    el.textContent = tag === "all" ? "All" : tag.toUpperCase();
+    el.addEventListener("click", () => {
+      activeTag = tag;
+      [...chipWrap.children].forEach(x => x.classList.remove("active"));
+      el.classList.add("active");
+      applyFilters();
+    });
+    return el;
+  };
+  chipWrap.appendChild(makeChip("all"));
+  allTags.forEach(t => chipWrap.appendChild(makeChip(t)));
+
+  function applyFilters(){
+    const q = (search.value || "").toLowerCase().trim();
+    cards.forEach(card => {
+      const name = card.querySelector("h3").textContent.toLowerCase();
+      const desc = card.querySelector("p").textContent.toLowerCase();
+      const tags = card.dataset.tags.split(",").map(t => t.trim());
+      const matchesTag = activeTag === "all" || tags.includes(activeTag);
+      const matchesQuery = !q || (name.includes(q) || desc.includes(q) || tags.some(t => t.includes(q)));
+      card.style.display = (matchesTag && matchesQuery) ? "" : "none";
+    });
+  }
+  search.addEventListener("input", applyFilters);
+
+  const form = document.getElementById("mailForm");
+  const status = document.getElementById("status");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const msg = document.getElementById("msg").value.trim();
+    if (!msg){
+      status.textContent = "Please type a message first.";
+      return;
+    }
+    status.textContent = "";
+    const subject = encodeURIComponent("Portfolio inquiry");
+    const body = encodeURIComponent(msg + "\n\n— Sent from your portfolio site");
+    window.location.href = `mailto:mk2014.hasan@gmail.com?subject=${subject}&body=${body}`;
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
