@@ -113,18 +113,18 @@
           <div class="box">
             <h3>What I owned</h3>
             <ul>
-              <li>Led the Launcher module and contributed to Split-View (Task View-private API).</li>
-              <li>Drove Clean Architecture refactoring to improve maintainability and testability using MVVM, Kotlin Coroutines, Flow, Room database and Dagger/Hilt DI.</li>
-              <li>Supported platform/app build integration (Soong + developer-friendly Gradle).</li>
+              <li>Designed and implemented the app discovery and caching pipeline (PackageManager → Room → Flow → ViewModel → UI), establishing the database as the single source of truth with real-time updates via BroadcastReceiver and PackageInstaller.</li>
+              <li>Re-architected the HomeScreen on AAOS using Clean Architecture and MVVM with Kotlin Coroutines/Flow, Room, and Dagger to deliver a modular, reactive, and highly maintainable codebase.</li>
+              <li>Introduced a developer-friendly Gradle build alongside the production Soong system, significantly improving development velocity and platform readiness.</li>
             </ul>
           </div>
 
           <div class="box">
             <h3>Tech highlights</h3>
             <ul>
-              <li>AAOS / AOSP integration points, lifecycle & system events.</li>
-              <li>Modular structure, clear boundaries, dependency direction control.</li>
-              <li>Performance and stability work for legacy components.</li>
+              <li>AAOS / AOSP system integration: platform lifecycle, PackageManager, system broadcasts, and private APIs (TaskView, ActivityTaskManager).</li>
+              <li>Reactive, modular architecture: Clean Architecture with MVVM, Kotlin Coroutines/Flow, Room database, and Dagger.</li>
+              <li>Build & platform alignment: Bridged Soong and developer-focused Gradle builds.</li>
             </ul>
           </div>
 
