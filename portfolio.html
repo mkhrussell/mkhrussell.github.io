@@ -45,11 +45,10 @@
   <section class="portfolioHero">
     <div class="wrap portfolioGrid">
       <div class="card pad">
-        <div class="pill">Portfolio Details • Mobile • AAOS / AOSP • Unit/UI Testing • CI/CD</div>
-        <h1>Selected work and deeper technical notes</h1>
+        <div class="pill">Portfolio Details • Android • Kotlin</div>
+        <h1>Projects with technical notes</h1>
         <p>
-          This page expands on the “Featured Work” section. Some items are constrained by confidentiality,
-          so I focus on architecture, responsibilities, and outcomes rather than proprietary specifics.
+          Some items are constrained by confidentiality, so I focus on architecture, responsibilities, and outcomes rather than proprietary specifics.
         </p>
 
         <div class="row" style="margin-top:10px">
@@ -60,10 +59,11 @@
         </div>
 
         <div class="metaRow">
-          <span class="pill">Kotlin • Java</span>
-          <span class="pill">Compose • MVVM/MVI</span>
-          <span class="pill">Soong • Gradle</span>
-          <span class="pill">JUnit • MockK • Espresso</span>
+          <span class="pill">📱 Kotlin • Java • Jetpack Compose • Dagger/Hilt • Koin</span>
+          <span class="pill">📱 Kotlin Multiplatform (KMP) • Compose Multiplatform (CMP)</span>
+          <span class="pill">🏗️ Clean Architecture • MVVM • MVI • MVP</span>
+          <span class="pill">🚘 Mobile • Gradle • Soong • AOSP • AAOS</span>
+          <span class="pill">🧪 Unit/UI Testing • CI/CD</span>
         </div>
       </div>
 
@@ -347,7 +347,7 @@
         <div>
           <h2>Side Projects</h2>
           <p>
-            Hands-on explorations focused on Kotlin, Android, AOSP, Jetpack Compose, App Architecture and DI.
+            Hands-on explorations focused on Kotlin, Android, Jetpack Compose, Kotlin Multiplatform (KMP), Compose Multiplatform (CMP), App Architecture and DI.
           </p>
         </div>
 
@@ -362,6 +362,62 @@
       </div>
 
       <div class="projects">
+
+        <!-- BookCatalogCMP -->
+
+        <article class="proj"
+                 data-tags="kotlin,kmp,cmp,compose,android,ios,desktop,ktor,room,koin">
+
+          <div class="tags">
+            <span class="tag">KMP</span>
+            <span class="tag">CMP</span>
+            <span class="tag">Android</span>
+            <span class="tag">iOS</span>
+            <span class="tag">Desktop</span>
+            <span class="tag">Ktor</span>
+            <span class="tag">Room</span>
+            <span class="tag">Koin</span>
+          </div>
+
+          <h3>BookCatalogCMP</h3>
+
+          <p>
+            Kotlin Multiplatform book discovery app built with Compose Multiplatform,
+            sharing UI, presentation, domain, networking, persistence, and dependency
+            injection across Android, iOS, and Desktop.
+          </p>
+
+          <div class="projMedia">
+            <video controls playsinline preload="metadata">
+              <source src="https://github.com/user-attachments/assets/0201ac9c-e412-4ee0-92b3-dcbf38d8b221" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="projMediaCaption">Android demo video for BookCatalogCMP.</p>
+          </div>
+
+          <ul>
+            <li>Searches Open Library, shows book details, and saves favorites locally with Room</li>
+            <li>Uses shared navigation, shared view models, Ktor networking, and Koin DI across platforms</li>
+            <li>Includes desktop packaging support with platform-specific icons for Windows, macOS, and Linux</li>
+          </ul>
+
+          <div class="projLinks">
+            <a class="btn"
+               href="https://github.com/mkhrussell/BookCatalogCMP"
+               target="_blank"
+               rel="noreferrer">
+               Code
+            </a>
+
+            <a class="btn"
+               href="https://github.com/mkhrussell/BookCatalogCMP#readme"
+               target="_blank"
+               rel="noreferrer">
+               README
+            </a>
+          </div>
+
+        </article>
 
         <!-- DaggerExampleSoong -->
 
@@ -443,7 +499,7 @@
   navlinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => navlinks.classList.remove("open")));
 
   // Active nav link on scroll
-  const ids = ["top","gm-homescreen","release-reliability","wearable-manager"];
+  const ids = ["top","gm-homescreen","release-reliability","wearable-manager","side-projects"];
   const sections = ids.map(id => document.getElementById(id));
   const navAnchors = [...document.querySelectorAll(".navlinks a")];
 
